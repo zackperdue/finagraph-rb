@@ -1,5 +1,15 @@
 require "finagraph/version"
 
 module Finagraph
-  # Your code goes here...
+
+  class << self
+    attr_accessor :api_key
+  end
+
+  self.api_key = nil
+
+  def self.api_key
+    @api_key || ENV['FINAGRAPH_API_KEY']
+  end
+
 end
