@@ -1,4 +1,5 @@
 require "finagraph/version"
+require "finagraph/client"
 
 module Finagraph
 
