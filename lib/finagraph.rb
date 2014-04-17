@@ -1,3 +1,7 @@
+require 'multi_json'
+require 'net/http'
+require 'uri'
+
 require "finagraph/version"
 require "finagraph/client"
 
