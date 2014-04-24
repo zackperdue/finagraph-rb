@@ -2,7 +2,8 @@ module Finagraph
   class Client
 
     def self.list
-        Net::HTTP::get(URI('https://finagraph.apiary-mock.com/api/v2/client'))
+      url = Finagraph.base_url+'/api/v2/client'
+      RestClient.get url, {'Authorization' => "apikey #{Finagraph.api_key}"}
     end
 
     def self.create
@@ -15,6 +16,12 @@ module Finagraph
 
     def self.update
 
+    end
+
+    private
+
+    def self.request
+      @request ||= Finagraph::Request
     end
 
   end
