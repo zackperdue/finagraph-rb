@@ -1,5 +1,9 @@
 # Finagraph
 
+[![Coverage Status](https://coveralls.io/repos/zackperdue/finagraph-rb/badge.png)](https://coveralls.io/r/zackperdue/finagraph-rb)
+
+[![Build Status](https://travis-ci.org/zackperdue/finagraph-rb.svg?branch=master)](https://travis-ci.org/zackperdue/finagraph-rb)
+
 TODO: Write a gem description
 
 ## Installation
