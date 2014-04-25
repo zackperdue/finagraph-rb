@@ -3,7 +3,7 @@ module Finagraph
     class Finagraph < API
 
       def self.yearly(gid=nil)
-        get "/api/v2/snapshotgroup/#{gid}/finagraph/year"
+        get "/api/v2/snapshotgroup/#{gid}/finagraph"
       end
 
       def self.quarterly(gid=nil)
