@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Finagraph do
-  it 'does stuff' do
-
+  it 'should have a name' do
+    "Finagraph".should == "Finagraph"
   end
 end
