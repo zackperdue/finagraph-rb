@@ -1,8 +1,13 @@
-require 'rest-client'
+require 'httparty'
+require 'json'
 
-require "finagraph/request"
 require "finagraph/version"
+require "finagraph/api"
 require "finagraph/client"
+require "finagraph/linker"
+require "finagraph/snapshot_group"
+require "finagraph/snapshot_group/finagraph"
+require "finagraph/financial"
 
 
 module Finagraph
