@@ -20,7 +20,7 @@ module Finagraph
   self.base_url = 'https://app.finagraph.com'
 
   def self.api_key
-    @api_key || ENV['FINAGRAPH_API_KEY']
+    @api_key ||= ENV['FINAGRAPH_API_KEY']
   end
 
   def self.base_url

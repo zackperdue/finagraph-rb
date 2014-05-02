@@ -2,7 +2,8 @@ module Finagraph
   class Client < API
 
     def self.list
-      get '/api/v2/client'
+      api = get '/api/v2/client'
+      puts api.inspect
     end
 
     def self.create(options={})

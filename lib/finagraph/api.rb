@@ -6,8 +6,15 @@ module Finagraph
       @api_key ||= Finagraph.api_key
     end
 
-    base_uri 'https://finagraph.apiary-mock.com'
-    headers 'Authorization' => "apikey #{@api_key}"
+    def self.base_url
+      @base_url || Finagraph.base_url
+    end
+
+    base_uri self.base_url
+    base_uri @base_url
+    base_uri Finagraph.base_url
+
+    headers 'Authorization' => "apikey #{self.api_key}"
     format :json
 
   end
